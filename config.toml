@@ -1,0 +1,7 @@
+baseurl = "http://mono0926.com"
+languageCode = "ja-jp"
+title = "monoHub"
+publishdir = "public"
+
+[permalinks]
+    post = "blog/:year/:month/:day/:filename/"
