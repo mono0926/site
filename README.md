@@ -30,7 +30,7 @@ open $POST_PATH
 SOURCE_PATH='/Documents/Git/Private/site'
 cd ~/$SOURCE_PATH
 open http://localhost:1313/
-hugo server -theme=redlounge --buildDrafts --watch
+hugo server --buildDrafts --watch
 ```
 
 ### Deploy
@@ -45,7 +45,7 @@ push_changes() {
 
 SOURCE_PATH='/Documents/Git/Private/site'
 cd ~/$SOURCE_PATH
-hugo -t hugo-zen
+hugo
 cd public
 push_changes
 cd -

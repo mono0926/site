@@ -3,6 +3,8 @@ baseurl = "http://mono0926.com"
 languageCode = "ja"
 title = "mono-log"
 auther = "Masayuki Ono"
+pygmentsStyle = "monokai"
+theme = "hugo-zen"
 
 [permalinks]
     post = "blog/:year/:month/:day/:filename/"
