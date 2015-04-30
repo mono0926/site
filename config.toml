@@ -1,6 +1,8 @@
+# https://github.com/rakuishi/hugo-zen
 baseurl = "http://mono0926.com"
-languageCode = "ja-jp"
+languageCode = "ja"
 title = "monoHub"
+auther = "Masayuki Ono"
 publishdir = "public"
 
 [permalinks]
