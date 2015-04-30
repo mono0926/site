@@ -25,6 +25,9 @@ open $POST_PATH
 
 ### Preview
 
+- Executing by [Alfred Workflows](http://support.alfredapp.com/workflows) is recommended.
+- These scripts should be improved...
+
 ```sh
 SOURCE_PATH='/Documents/Git/Private/site'
 cd ~/$SOURCE_PATH
