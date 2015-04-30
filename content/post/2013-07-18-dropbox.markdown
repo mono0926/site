@@ -1,0 +1,148 @@
+---
+layout: post
+title: "iOSからDropbox新APIのDatastore APIを使ってみる"
+date: 2013-07-18
+comments: true
+categories: dropbox api
+---
+
+### サンプルとドキュメント
+
+- サンプル
+  * [Datastore API SDKs](https://www.dropbox.com/developers/datastore/sdks/ios)からSDKダウンロードすると同梱されてる
+- ドキュメント
+  * [Datastore API for iOS Documentation](https://www.dropbox.com/developers/datastore/docs/ios)
+- チュートリアル
+  * [Using the Datastore API on iOS](https://www.dropbox.com/developers/datastore/tutorial/ios)
+
+### サンプル起動
+
+#### Datastore Examplesのサンプル
+
+起動後Dropboxの認証を求められて、認証が通るとTODOアプリが開く。
+アイテムの追加とDone状態の切り替えのシンプルなサンプル。
+リンクしたDropboxには特に新しいファイルなど生成されていない様子。
+
+2台目にインストールして認証するとちゃんと1台目で追加したタスクが出てきて、当たり前だけどなんか関心（´-ω-｀）
+
+<!-- more -->
+
+![todo](/images/post/todo.png)
+
+
+### [チュートリアル](https://www.dropbox.com/developers/datastore/tutorial/ios)を読み解く
+
+- 複数端末間でのコンフリクトは自動的に解消される(挙動を変えるにはフィールドごとにルールを設定出来る)
+  * DBResolutionRemote：リモート優先(デフォルト)
+  * DBResolutionLocal：ローカル優先
+  * DBResolutionMax：大きい値優先
+  * DBResolutionMin：小さい値優先
+  * DBResolutionSum：適当に足し引きされる
+- RDBと違ってスキーマを持たない
+  * KVSに近い感じ。keyと適当な型のvalueのペア。
+- Account manager
+  * 認証用
+- Datasotores and tables
+  * データベース本体
+  * オフライン動作可
+  * オンライン同期するにはsyncを明示的に呼ぶ
+    - トランザクション
+
+### 実装
+
+#### アカウント認証
+
+他のDropbox APIと同じような定型的な感じ。
+
+```objective-c
+// AppDelegate
+- (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)opts {
+    DBAccountManager* accountMgr =
+        [[DBAccountManager alloc] initWithAppKey:@"APP_KEY" secret:@"APP_SECRET"];
+    [DBAccountManager setSharedManager:accountMgr];
+}
+```
+
+```objective-c
+// Some view controller
+- (IBAction)didPressLink {
+    DBAccount *account = [[DBAccountManager sharedManager] linkedAccount];
+    if (account) {
+        NSLog(@"App already linked");
+    } else {
+        [[DBAccountManager sharedManager] linkFromController:self];
+    }
+}
+```
+
+```objective-c
+// AppDelegate
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url
+    sourceApplication:(NSString *)source annotation:(id)annotation {
+    DBAccount *account = [[DBAccountManager sharedManager] handleOpenURL:url];
+    if (account) {
+        NSLog(@"App linked successfully!");
+        return YES;
+    }
+    return NO;
+}
+```
+
+#### テーブル作成・取得
+
+多分無かったら作る、あったら取得みたいな感じ。
+
+```objective-c
+DBDatastore *store = [DBDatastore openDefaultStoreForAccount:account error:nil];
+DBTable *tasksTbl = [store getTable:@"tasks"];
+```
+
+#### レコード操作
+
+同じテーブルに対して、異なるキー・バリューの型突っ込めるらしい。
+
+```objective-c
+DBRecord *firstTask = [tasksTbl insert:@{ @"taskname": @"Buy milk", @"completed": @NO }];
+[store sync:nil];
+```
+
+#### テーブルのレコードの増減監視
+
+```objective-c
+[store addObserver:self block:^() {
+    if (store.status & DBDatastoreIncoming) {
+        NSDictionary *changed = [slf.store sync:nil];
+        // 何が変わったか調べて処理
+    }
+}];
+```
+
+#### バリューの型
+
+- String
+- Boolean
+- Integer
+- Floating
+- Date
+- Bytes
+  * 最大100KB
+  * より大きいサイズはSync APIやfilepathベースで扱うようにとのこと
+- List 
+
+#### ストレージの容量
+
+冒頭に
+
+> リンクしたDropboxには特に新しいファイルなど生成されていない様子
+
+と書いたけど、5MBはユーザーストレージを使わずにアプリケーションごとに割り当てられていて、それを超えるとユーザーストレージ領域を使っていくという感じ。それさえ食い尽くすとリミット。
+ユーザーのストレージ汚さないようにしたい場合は5MB制限に気をつける。 
+
+### 弄ってみた印象
+
+ネットワーク状態に応じての同期とか意識しなくて良いし、本来サーバー実装するべきところをSDKに任せられて良い一方、ローカルでのクエリが少し冗長な感じ。  
+サンプルは1テーブルなのに増減監視でごちゃごちゃ処理してて複数テーブルとかその関連とか考え出すと素のままじゃ使うの厳しそう。
+Core Data使えばNSFetchedResultsControllerでコレクション監視がかなり簡潔に書けるところを自前実装じなくちゃいけなくて、自前アプリに導入するならそこらへんうまくフレームワーク化しないと快適に使えない感じ(そんな感じのライブラリ作っていくのも面白そうだけど)。
+
+Apple製品に閉じられるなら、Core Data + iCloudの方がやはり良いなあという感じ（´-ω-｀）
+参考：[iCloud プログラミング入門](http://d.hatena.ne.jp/glass-_-onion/20120728/1343471940)

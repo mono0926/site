@@ -1,0 +1,153 @@
+---
+layout: post
+title: "Ginger APIをPythonで叩いてみた"
+date: 2013-08-03
+comments: true
+categories: ginger english python alfred
+---
+
+そんな有名でも無いけど、Gingerという英文作成支援サービスがある。
+
+[もう前置詞に迷わない」──「ネイティブレベル」の英語が書ける英文チェッカー「Ginger」日本上陸](http://www.itmedia.co.jp/news/articles/1304/24/news120.html)という記事などで4月にニュースになって、この手のものが好きな僕は[Chromeの拡張](https://chrome.google.com/webstore/detail/spell-and-grammar-checker/kdfieneakcjfaiglcfcgkidlkmlijjnh)をすぐ導入してみたけど、不必要な時に指摘されたり、必要な時は使い勝手が悪いし、うーんと思ったり。
+
+### Ginger API
+
+コマンドラインとかで使いたいなあと思って適当にぐぐったら、[Ginger API を試してみた](http://blog.livedoor.jp/xaicron/archives/54466736.html)という記事が。
+Gistになぜか[curlで使ってる例](https://gist.github.com/koron/5454500)があるみたいで。
+
+GingerのページにはAPIとか無いのになぜだろうと思って、Chromeの開発ツールでリクエストのぞいてみたら、もろにAPI叩いているのがあった。
+
+![ginger](/images/post/ginger.png)
+
+> http://services.gingersoftware.com/Ginger/correct/json/GingerTheText?callback=C&apiKey=6ae0c3a0-afdc-4532-a810-82ded0054236&lang=US&clientVersion=2.0&text=I+am+programmer.&_1375584239344=
+
+<!-- more -->
+
+これをブラウザにコピペするとJSONが```C()```で囲まれたものが出てくるけど、多分JSONP用のパラメーターなので、単にJSON受け取りたい場合は不要。
+
+textパラメーターも適当に削れて、以下でリクエストが可能。
+apiKeyとかもろに出てるけどいいのだろうか(　´･‿･｀)
+
+> http://services.gingersoftware.com/Ginger/correct/json/GingerTheText?apiKey=6ae0c3a0-afdc-4532-a810-82ded0054236&lang=US&clientVersion=2.0&text=I+am+programmer.
+
+> {"LightGingerTheTextResult":[{"Confidence":4,"From":5,"LrnFrg":"I am programmer","LrnFrgOrigIndxs":[{"From":5,"To":14}],"Mistakes":[{"CanAddToDict":false,"From":5,"To":14}],"ShouldReplace":true,"Suggestions":[{"LrnCatId":12,"Text":"a programmer"},{"LrnCatId":13,"Text":"the programmer"}],"To":14,"TopLrnCatId":12,"Type":3,"UXFrgFrom":0,"UXFrgTo":14}]}
+
+ざっくりと、間違えている箇所と、その修正例(複数のこともあり)が返ってくる。
+
+と、普通にAPI叩けてしまい、これ使ってよいのだろうかと思いつつ、非公開になったりAPI変わったりすると面倒とか、くらいで私的に使う分には良いのではないかと。
+これでサービス作ったり儲けたりすると黒くなってきそうだけど。
+
+
+### 実用的な英語のフレーズを表示する「Rephrase」という機能
+
+上記のやつは単に間違えをしてくれるサービスだけど、さらにより自然な言い回し候補を表示してくれるサービスもあったり。
+
+[英文を文脈に合わせて修正する「Ginger」とネイティブ英語に変換する「Rephrase」](http://gigazine.net/news/20130802-ginger-rephrase/)に書いてあるとおり[Rephrase](http://www.gingersoftware.com/rephrase_jpn)に飛ぶと使える。
+
+こちらも同様の手口で簡単にAPIのURLが取得可能。
+
+> http://ro.gingersoftware.com/rephrase/rephrase?s=Hi%2C%20nice%20to%20meet%20you.&callback=jQuery17204343029616866261_1375585040822&_=1375585300259
+
+同じくcalllback云々は不要だけど、さっきはcallback関数名がCだったのにけっこうフォーマットが違ったり、apiKeyが無かったり、base URLが違ったりとかなり適当な感じ（´・ω・｀）
+
+と、英文を入力するとJSONで結果を受け取れるとこまでは行ったので、Pythonで叩いてみた。
+
+大体こんな感じで、修正後の英文や、改善後の候補群に変換するスクリプトが書けた。
+最近はWebアクセスはrequestsモジュールを使うのがモダンっぽい。
+
+最新版：[Alfred Workflow](https://github.com/mono0926/AlfredWorkflow/blob/master/ginger/ginger.py)
+
+```python
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
+import requests
+import json
+import sys
+import os
+
+class GingerSummary(object):
+	"""Ginger Summary"""
+	def __init__(self, original, results):
+		super(GingerSummary, self).__init__()
+		self.original = original
+		self.results = sorted(results, cmp=lambda x, y: cmp(x.from_, y.from_))
+		self.gingered = None
+
+	def process(self):
+		if not self.gingered:
+			self._ginger()
+		return self.gingered;
+
+	def show_detail(self):
+		for r in self.results:
+			print(r)
+
+	def _ginger(self):
+		gingered = self.original
+		offset = 0
+		for i, r in enumerate(self.results):
+			suggest = r.suggestions[0]
+			gingered = '{0}{1}{2}'.format(gingered[:r.from_+offset], suggest, gingered[r.to+1+offset:])
+			offset += len(suggest) - (r.to - r.from_ + 1)
+		self.gingered = gingered
+
+
+class GingerResult(object):
+	"""Ginger Result"""
+	def __init__(self):
+		super(GingerResult, self).__init__()
+
+	@classmethod
+	def create_from_json(cls, json):
+		that = GingerResult()
+		that.from_ = json['From']
+		that.to = json['To']
+		that.suggestions = [x['Text'] for x in json['Suggestions']]
+		that.should_replace = bool(json['ShouldReplace'])
+		that.confidence = json['Confidence']
+		return that
+
+	def __str__(self):
+		return 'from: {0}, to: {1}, suggestions: [{2}], should_replace: {3}, confidence: {4}'.format(
+			self.from_, self.to, ', '.join(self.suggestions), self.should_replace, self.confidence)
+
+class GingerClient(object):
+	"""Ginger Client"""
+	base_url = 'http://services.gingersoftware.com/Ginger/correct/json/GingerTheText'
+	api_key = '6ae0c3a0-afdc-4532-a810-82ded0054236'
+	def __init__(self, sentence):
+		super(GingerClient, self).__init__()
+		self.sentence = sentence
+	
+	def ginger(self):
+		self._initialize()
+		return self.summary.process()
+
+	def show_detail(self):
+		self._initialize()
+		self.summary.show_detail()
+
+	def _initialize(self):
+		params = {'apiKey':GingerClient.api_key, 'text':self.sentence, 'lang':'US', 'clientVersion':'2.0'}
+		response = requests.get(GingerClient.base_url, params=params)
+		results = json.loads(response.text)['LightGingerTheTextResult']
+		ginger_results = [GingerResult.create_from_json(x) for x in results]
+		self.summary = GingerSummary(self.sentence, ginger_results)	
+
+class RephraseClient(object):
+	"""RephraseClient"""
+	base_url = 'http://ro.gingersoftware.com/rephrase/rephrase'
+	def __init__(self, sentence):
+		super(RephraseClient, self).__init__()
+		self.sentence = sentence
+
+	def rephrase(self):
+		response = requests.get(RephraseClient.base_url, params={'s': self.sentence})
+		results = json.loads(response.text)['Sentences']
+		texts = [x['Sentence'] for x in results]
+		return texts
+
+
+```
+
+### 続き：[GingerをAlfredで使えるようにしてみた](/blog/2013/08/04/ginger/) 

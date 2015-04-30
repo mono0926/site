@@ -1,0 +1,94 @@
+---
+layout: post
+title: "iOSからDropbox新APIのDrop-ins(Chooser)を使ってみる"
+date: 2013-07-17
+comments: true
+categories: dropbox api
+---
+
+古い記事だけど、[[iPhone/iPad] Dropbox API を使ってみた](http://blog.syuhari.jp/archives/2284) をさらっと見て作業開始。  
+開発者登録は自力じゃなかなか見つからなかったけど、[Dropbox API terms and conditions](https://www.dropbox.com/developers/apply?cont=/developers/apps)。  
+権限の設定などは初回の作成時以外は変更出来ないっぽいので、慎重に。
+
+### Drop-ins
+[Using the Chooser (iOS)](https://www.dropbox.com/developers/dropins/chooser/ios)を読んでみた。  
+[Download iOS SDK](http://dl.dropboxusercontent.com/s/uf3893wfnk4f3p9/dropbox-ios-chooser-sdk-1.0.zip)に同梱のサンプルプロジェクトを実行しながらドキュメント読めばすごく分かりやすい。
+
+#### 導入
+
+[Download iOS SDK](http://dl.dropboxusercontent.com/s/uf3893wfnk4f3p9/dropbox-ios-chooser-sdk-1.0.zip) に入っているDBChooser.framework と DBChooser.bundle を対象のプロジェクトに突っ込むだけ。
+
+<!-- more -->
+
+#### AppKey指定
+
+唯一躓きそうなのがAppKeyで、サンプルには元々おそらくサンプル用のkeyがURL Schemesに入っていてそのまま実行できちゃうけど、自分のアプリに適用する場合はちゃんと自分のkeyを指定する必要あり。
+プロジェクトのセッティングのTARGETSのURL TypesのURL Schemesに指定するわけだけど、db-というプレフィックスの後に[App Console](https://www.dropbox.com/developers/apps)のDrop-insタイプのアプリのkeyを入れる形式。不正なAppKeyを指定するとChooser起動のタイミングで落ちる。
+
+![projetc setting](/images/post/dropin.png)
+
+#### 呼び出し
+
+```objective-c
+#import <DBChooser/DBChooser.h>
+
+- (void)didPressChoose
+{
+    // 複数のkeyを使う場合はdefaultChooserの代わりにkeyを指定して初期化
+    [[DBChooser defaultChooser] openChooserForLinkType:DBChooserLinkTypePreview // 取得出来るURL2種類から選択
+                                    fromViewController:self completion:^(NSArray *results)
+    {
+        if ([results count]) {
+            // Process results from Chooser
+        } else {
+            // User canceled the action
+        }
+    }];
+}
+```
+
+- 取得出来るURL2種類
+  * DBChooserLinkTypePreviewlinks
+    - 文字通りプレビュー。色々アクションを選べる。
+  * DBChooserLinkTypeDirectlinks
+    - データに直接アクセス出来るリンク
+    - サーバーにこれを渡す作りにすれば、モバイル端末 - サーバー通信はちょっとしたJSONで、通信環境の良いサーバーで効率よくダウンロードとかできそう。
+    - 4時間でexpireされるので注意
+
+
+#### Chooserからファイルを選んだあと
+
+##### AppDelegateの以下が呼ばれる
+
+
+```objective-c
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    // urlに色々詰め込まれている
+    // 複数のkeyを使う場合はdefaultChooserの代わりにkeyを指定して初期化
+    if ([[DBChooser defaultChooser] handleOpenURL:url]) {
+        return YES;
+    }
+    return NO;
+}
+```
+
+##### urlがパースされて以下のDBChooserResultのarrayにマッピングされるイメージ
+```objective-c
+@interface DBChooserResult : NSObject
+// DBChooserLinkTypeで何が入るか変わる。
+@property NSURL *link;
+@property NSString *name;
+@property long long size;
+@property NSURL *iconURL;
+// 画像や動画の時に3種類(64x64px・200x200px・640x480px)の大きさのサムネイルURLが入っている。
+@property NSDictionary *thumbnails;
+
+@end
+```
+
+### まとめ
+
+サンプルも分かりやすくて、APIとしても使いやすくて素晴らしい。
+このAPIに限らずだけど、Dropboxアプリがインストールされていること前提のアプリと割り切れば色々広がりそう。
+[Drop-ins](https://www.dropbox.com/developers/dropins) にある通りまだ開発中みたいだけど、ChooserだけでなくSaverもあって、アプリ間連携とかもこれで行けたりするかも。(iOSやAndroidからはローカルDropboxアプリへの保存は同期的に行いそうだし)

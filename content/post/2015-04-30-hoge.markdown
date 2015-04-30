@@ -1,0 +1,9 @@
+---
+layout: post
+title: "hoge"
+date: 2015-04-30
+comments: true
+categories: 
+---
+
+test
