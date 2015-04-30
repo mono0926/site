@@ -19,9 +19,7 @@ Source of http://mono0926.com
 SOURTH_PATH='/Documents/Git/Private/site'
 cd ~/$SOURTH_PATH
 git pull
-source $HOME/.my_profile
 POST_PATH=$(hugo new post/$1.md)
-echo 'aaa', $POST_PATH
 POST_PATH=$(echo $POST_PATH | sed -e "s/ created//")
 open $POST_PATH
 ```
