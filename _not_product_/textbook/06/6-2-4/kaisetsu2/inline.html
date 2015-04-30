@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ブロックレベル要素とインライン要素</title>
+
+<style>
+p {
+	background-color: #FFFF99;
+	border:solid;
+	padding: 10px;
+	margin:20px;
+	width:400px;
+	height: 150px;
+}
+a {
+	background-color: #FFCCCC;
+	border:solid;
+	padding: 20px;
+	margin:20px;
+	width:400px;
+	height: 150px;
+}
+span {
+	background-color: #FFCCCC;
+}
+
+</style>
+</head>
+<body>
+
+<p>p要素はブロックレベル要素です。<a href="#">a要素</a>はインライン要素です。インライン要素はwidthとheightを指定できません。インライン要素の上下マージンは有効になりません。</p>
+
+<span>インライン要素が複数行にわたる場合、ボックスの形状は中身のテキストに合わせた形になります。</span>
+
+
+</body>
+</html>

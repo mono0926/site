@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>絶対配置と相対配置・絶対配置 「position:absolute;」</title>
+
+<style>
+#page {
+	width: 200px;
+	margin: 0 auto;
+	border: solid 5px #CCCCCC;
+}
+#page div {
+	width: 200px;
+	height: 100px;
+}
+.box1 { background-color:#FFFF99; }
+.box2 {
+	background-color:#FFCCCC;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box3 { background-color:#99CCFF; }
+</style>
+</head>
+<body>
+
+<div id="page">
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+</div>
+
+</body>
+</html>

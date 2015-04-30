@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>フォーム関連の HTMLタグ</title>
+
+</head>
+<body>
+
+<h1>アンケート</h1>
+<form action="comfirm.html" method="post">
+	<p>
+		<label>名前：<input type="text" name="username"></label>
+	</p>
+	<p>興味のある分野（複数回答可）：
+		<label><input type="checkbox" name="field" value="html">HTML</label>
+		<label><input type="checkbox" name="field" value="css">CSS</label>
+		<label><input type="checkbox" name="field" value="design" checked>デザイン</label>
+		<label><input type="checkbox" name="field" value="other">その他</label>
+	</p>
+	<p>サイトの評価：
+		<label><input type="radio" name="evaluation" value="1">わるい</label>
+		<label><input type="radio" name="evaluation" value="2" checked>ふつう</label>
+		<label><input type="radio" name="evaluation" value="3">よい</label>
+	</p>
+	<p>お住まいの地域：
+		<select name="area">
+			<option value="hokkaido">北海道</option>
+			<option value="tohoku">東北</option>
+			<option value="kanto">関東</option>
+			<option value="chubu">中部</option>
+			<option value="kansai">関西</option>
+			<option value="chugoku">中国</option>
+			<option value="shikoku">四国</option>
+			<option value="kyushu_okinawa">九州・沖縄</option>
+		</select>
+	<p>
+	<p>
+		<label>コメント：
+			<textarea name="comment" cols="50" rows="10"></textarea>
+		</label>
+	</p>
+	<p><input type="reset" value="リセット"><input type="submit" value="送信"></p>
+</form>
+
+
+</body>
+</html>
