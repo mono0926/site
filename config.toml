@@ -1,9 +1,17 @@
 # https://github.com/rakuishi/hugo-zen
 baseurl = "http://mono0926.com"
 languageCode = "ja"
-title = "monoHub"
+title = "mono-log"
 auther = "Masayuki Ono"
-publishdir = "public"
 
 [permalinks]
     post = "blog/:year/:month/:day/:filename/"
+
+[params]
+    logo = "/images/love.png"
+    copyright = "Masayuki Ono All right reserved."
+    twitter = "https://twitter.com/_mono"
+    facebook = "https://www.facebook.com/mono0926"
+    github = "https://github.com/mono0926"
+    email = "mono0926@gmail.com"
+    analytics = "UA-11434295-7"
