@@ -3,7 +3,8 @@ layout: post
 title: "iOS7対応記事のまとめ"
 date: 2013-09-21
 comments: true
-categories: iOS7 iOS Xcode OSX
+tags: [iOS7, iOS, Xcode, OSX]
+categories: [programming]
 ---
 
 iOS7関連のNDA解禁ということで、色々記事が増えてきたので、メモ。

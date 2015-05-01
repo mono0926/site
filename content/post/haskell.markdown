@@ -3,7 +3,8 @@ layout: post
 title: "Haskell勉強中"
 date: 2013-11-23
 comments: true
-categories: haskell scala C#
+tags: [haskell scala C#]
+categories: [programming]
 ---
 
 2週間くらい前からHaskell勉強中。
