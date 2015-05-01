@@ -3,7 +3,7 @@ layout: post
 title: "Google Readerが終わって…"
 date: 2013-07-07
 comments: true
-categories: [google, reader]
+tags: [google, reader]
 categories: [lifehack]
 ---
 
