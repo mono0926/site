@@ -3,7 +3,8 @@ layout: post
 title: "iOSからDropbox Sync APIを使ってみる"
 date: 2013-07-19
 comments: true
-categories: [dropbox, api]
+tags: [dropbox, api]
+categories: [programming]
 ---
 
 ### Dropbox Sync APIとは

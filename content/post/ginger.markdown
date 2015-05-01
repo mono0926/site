@@ -3,7 +3,8 @@ layout: post
 title: "GingerをAlfredで使えるようにしてみた"
 date: 2013-08-04
 comments: true
-categories: ginger python alfred english
+tags: [ginger, python, alfred, english]
+categories: [programming]
 ---
 
 [Ginger APIをPythonで叩いてみた](/blog/2013/08/03/ginger/)の続き。
