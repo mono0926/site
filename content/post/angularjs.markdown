@@ -3,7 +3,7 @@ layout: post
 title: "TypeScript・AngularJS・Jade・Stylusでサンプルコード"
 date: 2014-05-14
 comments: true
-categories: angularjs jade stylus
+categories: [angularjs, jade, stylus]
 ---
 
 最近Web系の勉強してて、Node.js・Express・Redis・Herokuなどサーバーサイド周り弄ってたけど、そろそろフロントエンドもという感じで色々やってみた。
