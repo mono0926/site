@@ -3,7 +3,8 @@ layout: post
 title: "Google Readerが終わって…"
 date: 2013-07-07
 comments: true
-categories: google reader
+categories: [google, reader]
+categories: [lifehack]
 ---
 
 一日に500-1000件消費するくらいのRSSリーダーヘビーユーザーでしたが、意外と困っていません。

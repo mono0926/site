@@ -3,7 +3,8 @@ layout: post
 title: "golangの環境構築"
 date: 2014-05-13
 comments: true
-categories: golang
+tags: [golang]
+categories: [programming]
 ---
 
 [GoCon/2014spring.rst at master · GoCon/GoCon](https://github.com/GoCon/GoCon/blob/master/2014spring.rst)に備えて、とりあえずgolangのセットアップと、暇なときに[A Tour of Go](http://tour.golang.org/#1)をやっておこうかと(　´･‿･｀)
