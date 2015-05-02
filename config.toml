@@ -4,7 +4,7 @@ languageCode = "ja"
 title = "mono-log"
 auther = "Masayuki Ono"
 pygmentsStyle = "monokai"
-theme = "hugo-zen"
+theme = "hugo-mono"
 
 [permalinks]
     post = "blog/:year/:month/:day/:filename/"
