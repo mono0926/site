@@ -3,7 +3,8 @@ layout: post
 title: "オーム社セールで色々買ってみた"
 date: 2013-12-12
 comments: true
-categories: book haskell programming math software statistics excel
+tags: [book, haskell, programming, math, software, statistics, excel]
+categories: [book]
 ---
 
 今日12時までの[オーム社セール](http://estore.ohmsha.co.jp/titles)で色々買ってみた。

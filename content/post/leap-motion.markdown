@@ -3,7 +3,8 @@ layout: post
 title: "Leap Motionが届いた"
 date: 2013-07-25
 comments: true
-categories: leap_motion
+tags: [leap_motion]
+categories: [programming]
 ---
 
 Leap Motionを買ってみた。  

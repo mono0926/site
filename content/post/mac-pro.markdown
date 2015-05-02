@@ -3,7 +3,8 @@ layout: post
 title: "Mac Proの新モデル(通称ゴミ箱)を買うことにした"
 date: 2013-10-27
 comments: true
-categories: osx mac shopping
+categories: [osx, mac, shopping]
+categories: [lifehack]
 ---
 
 今持っているMac Proの2010年モデルももう丸3年以上経っていたり、2011年モデルのMac mini(サーバー用)も切り捨てて1本化したいなと思ってたところに、新Mac Proが発表されて、ちょっと考えてたらほしくなってしまった。

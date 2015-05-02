@@ -3,7 +3,8 @@ layout: post
 title: "OSX 10.10(Yosemite)やiOS 8にアップデートして困ったこと"
 date: 2014-06-04
 comments: true
-categories: yosemite ios8
+categories: [yosemite, ios8]
+categories: [lifehack]
 ---
 
 例のごとく、何も考えずにメインマシンをOSX 10.10(Yosemite)・iOS 8にしてしまいましたが、いくつか細かいトラブルが。

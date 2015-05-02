@@ -3,7 +3,8 @@ layout: post
 title: "IRKitに外からアクセス出来るようにした"
 date: 2014-05-05
 comments: true
-categories: irkit
+tags: [irkit]
+categories: [programming]
 ---
 
 前回の[IRKitで遊び始めた〜とりあえずTerminalで操作〜 - monoHub](http://mono0926.com/blog/2014/05/05/irkit/)の続き。

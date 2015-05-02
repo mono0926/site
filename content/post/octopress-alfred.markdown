@@ -3,7 +3,8 @@ layout: post
 title: "Octopressへの投稿やdeployをAlfredのWorkflowで"
 date: 2013-07-07
 comments: true
-categories: octopress alfred
+tags: [octopress, alfred]
+categories: [programming]
 ---
 
 今日初めてOctopressを触ったら、けっこう気に入ったので、さらに気軽に書ける環境を整えれば捗るのではと思い、AlfredのWorkflowを作ってみました。

@@ -3,7 +3,8 @@ layout: post
 title: "OSXの開発環境を整えた"
 date: 2014-05-06
 comments: true
-categories: osx
+tags: [osx]
+categories: [programming]
 ---
 
 Node.jsで色々遊ぼうと思いつつ、開発環境がけっこう汚れていることに気づいたので、整理。

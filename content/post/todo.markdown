@@ -3,7 +3,8 @@ layout: post
 title: "NodeJS + Express + Stylus + Jade + AngularJS + Redisなどなどで、簡単なTODOアプリ"
 date: 2014-05-26
 comments: true
-categories: NodeJS Express Stylus Jade AngularJS Redis
+tags: [NodeJS, Express, Stylus, Jade, AngularJS, Redis]
+categories: [programming]
 ---
 
 NodeJS + Express + Stylus + Jade + AngularJS + Redisなどなどで、[簡単なTODOアプリ](http://ice-me.herokuapp.com/todos)作った。

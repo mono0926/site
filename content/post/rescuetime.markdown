@@ -3,7 +3,8 @@ layout: post
 title: "RescueTimeを昨日から使い始めた"
 date: 2014-05-29
 comments: true
-categories: rescuetime
+tags: [rescuetime]
+categories: [lifehack]
 ---
 
 [RescueTime](https://www.rescuetime.com)を昨日から使い始めたけど、素晴らしい。

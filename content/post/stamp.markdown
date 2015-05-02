@@ -3,7 +3,8 @@ layout: post
 title: "ラヴ様LINEスタンプ6月売り上げ"
 date: 2014-07-01
 comments: true
-categories: LINE スタンプ
+tags: [line, stamp]
+categories: [lifehack]
 ---
 
 先月6月の4日昼から公開された愛犬ラヴ様のLINEスタンプですが、6月売り上げが確定しました。

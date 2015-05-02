@@ -3,7 +3,8 @@ layout: post
 title: "Node.jsのIRKitライブラリあったから試してみた"
 date: 2014-05-05
 comments: true
-categories: irkit nodejs
+tags: [irkit, nodejs]
+categories: [programming]
 ---
 
 

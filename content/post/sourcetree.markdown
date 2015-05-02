@@ -3,7 +3,8 @@ layout: post
 title: "SourceTreeでブランチ名をコミットメッセージの先頭に自動挿入"
 date: 2014-10-31
 comments: true
-categories: sourcetree git
+tags: [sourcetree, git]
+categories: [programming]
 ---
 
 Git便利ですね。今やこれ無しで開発は無理、というレベルです。

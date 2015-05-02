@@ -3,7 +3,8 @@ layout: post
 title: "電子書籍自費出版系情報まとめ"
 date: 2013-07-14
 comments: true
-categories: kindle self_publish pandoc
+categories: [kindle, self_publish, pandoc]
+categories: [lifehack]
 ---
 
 最近、電子書籍系のアプリ開発中で、色々調べています。
