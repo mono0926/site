@@ -1,9 +1,6 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:mono0926/mono0926.github.io.git
-[submodule "themes/hugo-zen"]
-	path = themes/hugo-zen
-	url = git@github.com:mono0926/hugo-zen.git
 [submodule "themes/hugo-mono"]
 	path = themes/hugo-mono
 	url = git@github.com:mono0926/hugo-mono.git
