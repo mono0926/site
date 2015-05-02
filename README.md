@@ -49,7 +49,7 @@ hugo
 cd public
 push_changes
 cd -
-cd themes/hugo-zen
+cd themes/hugo-mono
 push_changes
 cd -
 push_changes
