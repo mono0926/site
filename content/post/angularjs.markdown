@@ -1,11 +1,12 @@
----
-layout: post
-title: "TypeScript・AngularJS・Jade・Stylusでサンプルコード"
-date: 2014-05-14
-comments: true
-tags: [angularjs, jade, stylus]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-14"
+layout = "post"
+tags = ["angularjs", "jade", "stylus"]
+title = "TypeScript・AngularJS・Jade・Stylusでサンプルコード"
+
++++
 
 最近Web系の勉強してて、Node.js・Express・Redis・Herokuなどサーバーサイド周り弄ってたけど、そろそろフロントエンドもという感じで色々やってみた。
 

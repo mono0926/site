@@ -1,11 +1,12 @@
----
-layout: post
-title: "オーム社セールで色々買ってみた"
-date: 2013-12-12
-comments: true
-tags: [book, haskell, programming, math, software, statistics, excel]
-categories: [book]
----
++++
+categories = ["book"]
+comments = true
+date = "2013-12-12"
+layout = "post"
+tags = ["book", "haskell", "programming", "math", "software", "statistics", "excel"]
+title = "オーム社セールで色々買ってみた"
+
++++
 
 今日12時までの[オーム社セール](http://estore.ohmsha.co.jp/titles)で色々買ってみた。
 

@@ -1,11 +1,12 @@
----
-layout: post
-title: "OSXの開発環境を整えた"
-date: 2014-05-06
-comments: true
-tags: [osx]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-06"
+layout = "post"
+tags = ["osx"]
+title = "OSXの開発環境を整えた"
+
++++
 
 Node.jsで色々遊ぼうと思いつつ、開発環境がけっこう汚れていることに気づいたので、整理。
 Node.jsのgenerator使いたくて、バージョン0.11系と0.10系をスイッチしたいなとか思ったのが発端。  

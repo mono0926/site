@@ -1,11 +1,11 @@
----
-layout: post
-title: "iTunesの動画や音楽の再生スピードを変える方法"
-date: 2014-06-11
-comments: true
-categories: [iTunes, Automator, AppleScript, OSX]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-06-11"
+layout = "post"
+title = "iTunesの動画や音楽の再生スピードを変える方法"
+
++++
 
 iPhoneのPodcastアプリでは再生スピードをコントロール出来て便利なのに、iTunesではその機能が無いので、AppleScriptなど使って出来るようにしてみた。
 本当はiTunesに閉じて実現したいところだけど、それはちょっと難しそう。

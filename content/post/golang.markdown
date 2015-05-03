@@ -1,11 +1,12 @@
----
-layout: post
-title: "golangの環境構築"
-date: 2014-05-13
-comments: true
-tags: [golang]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-13"
+layout = "post"
+tags = ["golang"]
+title = "golangの環境構築"
+
++++
 
 [GoCon/2014spring.rst at master · GoCon/GoCon](https://github.com/GoCon/GoCon/blob/master/2014spring.rst)に備えて、とりあえずgolangのセットアップと、暇なときに[A Tour of Go](http://tour.golang.org/#1)をやっておこうかと(　´･‿･｀)
 

@@ -1,11 +1,11 @@
----
-layout: post
-title: "電子書籍自費出版系情報まとめ"
-date: 2013-07-14
-comments: true
-categories: [kindle, self_publish, pandoc]
-categories: [lifehack]
----
++++
+categories = ["lifehack"]
+comments = true
+date = "2013-07-14"
+layout = "post"
+title = "電子書籍自費出版系情報まとめ"
+
++++
 
 最近、電子書籍系のアプリ開発中で、色々調べています。
 ちょっと情報が頭に乗り切らなくなってきたので、整理。

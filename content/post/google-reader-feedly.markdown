@@ -1,11 +1,12 @@
----
-layout: post
-title: "Google Readerが終わって…"
-date: 2013-07-07
-comments: true
-tags: [google, reader]
-categories: [lifehack]
----
++++
+categories = ["lifehack"]
+comments = true
+date = "2013-07-07"
+layout = "post"
+tags = ["google", "reader"]
+title = "Google Readerが終わって…"
+
++++
 
 一日に500-1000件消費するくらいのRSSリーダーヘビーユーザーでしたが、意外と困っていません。
 

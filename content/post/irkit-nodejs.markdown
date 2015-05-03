@@ -1,12 +1,12 @@
----
-layout: post
-title: "Node.jsのIRKitライブラリあったから試してみた"
-date: 2014-05-05
-comments: true
-tags: [irkit, nodejs]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-05"
+layout = "post"
+tags = ["irkit", "nodejs"]
+title = "Node.jsのIRKitライブラリあったから試してみた"
 
++++
 
 せっかく[Node.js the Right Way: Practical, Server-Side JavaScript That Scales [Kindle Edition]](http://www.amazon.com/gp/product/B00HSO6YD8/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00HSO6YD8&linkCode=as2&tag=mono0926-20&linkId=SIVQ46LXCW3PK3IO)でNode.jsを勉強したので、IRKitをNode.jsの勉強題材に出来ないかなと思って、とりあえずNode.jsのクライアントライブラリ無いかな？と探したらあったので、叩いてみた。
 

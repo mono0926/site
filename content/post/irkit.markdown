@@ -1,11 +1,12 @@
----
-layout: post
-title: "IRKitで遊び始めた〜とりあえずTerminalで操作〜"
-date: 2014-05-05
-comments: true
-tags: [irkit, nodejs]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-05"
+layout = "post"
+tags = ["irkit", "nodejs"]
+title = "IRKitで遊び始めた〜とりあえずTerminalで操作〜"
+
++++
 
 冬場忙しかったりで既存アプリで部屋のリモコン登録する程度しかいじれてなかったけど、最近ようやく落ち着いてきたので、[IRKit](http://www.amazon.co.jp/gp/product/B00H91KK26/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00H91KK26&linkCode=as2&tag=mono0926-22)で遊んでみる(　´･‿･｀)
 

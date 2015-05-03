@@ -1,11 +1,12 @@
----
-layout: post
-title: "SourceTreeでブランチ名をコミットメッセージの先頭に自動挿入"
-date: 2014-10-31
-comments: true
-tags: [sourcetree, git]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-10-31"
+layout = "post"
+tags = ["sourcetree", "git"]
+title = "SourceTreeでブランチ名をコミットメッセージの先頭に自動挿入"
+
++++
 
 Git便利ですね。今やこれ無しで開発は無理、というレベルです。
 

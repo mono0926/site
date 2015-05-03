@@ -1,11 +1,12 @@
----
-layout: post
-title: "iOS 8/Swift エンジニア勉強会資料公開しました"
-date: 2014-10-05
-comments: true
-tags: [ios]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-10-05"
+layout = "post"
+tags = ["ios"]
+title = "iOS 8/Swift エンジニア勉強会資料公開しました"
+
++++
 
 [iOS 8/Swift エンジニア勉強会](http://connpass.com/event/8629/)が台風で延期になったので、手元にいつまでもあってもしょうもないので資料公開しました(　´･‿･｀)
 

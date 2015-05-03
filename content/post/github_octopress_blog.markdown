@@ -1,11 +1,13 @@
----
-layout: post
-title: "GitHub + Octopressでブログ作ってみた"
-date: 2013-07-07
-comments: true
-tags: [github, octopress]
-categories: [blog]
----
++++
+categories = ["blog"]
+comments = true
+date = "2013-07-07"
+layout = "post"
+tags = ["github", "octopress"]
+title = "GitHub + Octopressでブログ作ってみた"
+
++++
+
 Markdownで書けてなかなか良い感じかもしれない（´-ω-｀）
 
 ### 導入手順

@@ -1,11 +1,12 @@
----
-layout: post
-title: "GingerをAlfredで使えるようにしてみた"
-date: 2013-08-04
-comments: true
-tags: [ginger, python, alfred, english]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-08-04"
+layout = "post"
+tags = ["ginger", "python", "alfred", "english"]
+title = "GingerをAlfredで使えるようにしてみた"
+
++++
 
 [Ginger APIをPythonで叩いてみた](/blog/2013/08/03/ginger/)の続き。
 

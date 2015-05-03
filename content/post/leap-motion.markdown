@@ -1,11 +1,12 @@
----
-layout: post
-title: "Leap Motionが届いた"
-date: 2013-07-25
-comments: true
-tags: [leap_motion]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-07-25"
+layout = "post"
+tags = ["leap_motion"]
+title = "Leap Motionが届いた"
+
++++
 
 Leap Motionを買ってみた。  
 多分1年ちょっと前に[指先を1/100ミリ単位で捉える3Dモーション入力機器 LEAP、70ドルで予約受付開始 (動画)](http://japanese.engadget.com/2012/05/21/1-100-3d-leap-70/)などの記事を見て、コンセプト動画なのか実動画像なのか知らないけど、すごいなーと思って放置してたけど、今週けっこう話題になってて、記事とか読んでたらいつの間にかポチってた感じ。

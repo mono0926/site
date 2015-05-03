@@ -1,11 +1,12 @@
----
-layout: post
-title: "Haskell勉強中"
-date: 2013-11-23
-comments: true
-tags: [haskell scala C#]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-11-23"
+layout = "post"
+tags = ["haskell", "scala", "C#"]
+title = "Haskell勉強中"
+
++++
 
 2週間くらい前からHaskell勉強中。
 

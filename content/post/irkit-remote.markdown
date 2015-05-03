@@ -1,11 +1,12 @@
----
-layout: post
-title: "IRKitに外からアクセス出来るようにした"
-date: 2014-05-05
-comments: true
-tags: [irkit]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-05-05"
+layout = "post"
+tags = ["irkit"]
+title = "IRKitに外からアクセス出来るようにした"
+
++++
 
 前回の[IRKitで遊び始めた〜とりあえずTerminalで操作〜 - monoHub](http://mono0926.com/blog/2014/05/05/irkit/)の続き。
 

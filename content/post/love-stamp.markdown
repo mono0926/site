@@ -1,11 +1,11 @@
----
-layout: post
-title: "ラヴさんスタンプをLINE Creators Marketに申請してみた"
-date: 2014-04-17
-comments: true
-categories: [stamp, love, design]
-categories: [stamp]
----
++++
+categories = ["stamp"]
+comments = true
+date = "2014-04-17"
+layout = "post"
+title = "ラヴさんスタンプをLINE Creators Marketに申請してみた"
+
++++
 
 2月下旬に発表され、本日受付を開始した[LINE Creators Market](https://creator.line.me/)に、自作スタンプを申請してみました。
 

@@ -1,11 +1,12 @@
----
-layout: post
-title: "iOS7対応記事のまとめ"
-date: 2013-09-21
-comments: true
-tags: [iOS7, iOS, Xcode, OSX]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-09-21"
+layout = "post"
+tags = ["iOS7", "iOS", "Xcode", "OSX"]
+title = "iOS7対応記事のまとめ"
+
++++
 
 iOS7関連のNDA解禁ということで、色々記事が増えてきたので、メモ。
 少しずつ追記していきながら、落ち着いたところで、集約したような記事書くかも。

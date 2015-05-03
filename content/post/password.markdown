@@ -1,11 +1,12 @@
----
-layout: post
-title: "iOS8で1Passwordが使えるようになった"
-date: 2014-06-13
-comments: true
-tags: [1password, ios8]
-categories: [lifehack]
----
++++
+categories = ["lifehack"]
+comments = true
+date = "2014-06-13"
+layout = "post"
+tags = ["1password", "ios8"]
+title = "iOS8で1Passwordが使えるようになった"
+
++++
 
 [OSX 10.10(Yosemite)やiOS 8にアップデートして困ったこと - monoHub](http://mono0926.com/blog/2014/06/04/yosemite/)で書いた通り、iOS 8にして以来、[1Password](https://agilebits.com/onepassword/ios)が使えなくてつらたんでした（´-ω-｀）
 

@@ -1,11 +1,12 @@
----
-layout: post
-title: "Octopressへの投稿やdeployをAlfredのWorkflowで"
-date: 2013-07-07
-comments: true
-tags: [octopress, alfred]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-07-07"
+layout = "post"
+tags = ["octopress", "alfred"]
+title = "Octopressへの投稿やdeployをAlfredのWorkflowで"
+
++++
 
 今日初めてOctopressを触ったら、けっこう気に入ったので、さらに気軽に書ける環境を整えれば捗るのではと思い、AlfredのWorkflowを作ってみました。
 

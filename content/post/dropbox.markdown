@@ -1,11 +1,12 @@
----
-layout: post
-title: "iOSからDropbox Sync APIを使ってみる"
-date: 2013-07-19
-comments: true
-tags: [dropbox, api]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2013-07-19"
+layout = "post"
+tags = ["dropbox", "api"]
+title = "iOSからDropbox Sync APIを使ってみる"
+
++++
 
 ### Dropbox Sync APIとは
 

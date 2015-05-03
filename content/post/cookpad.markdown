@@ -1,11 +1,12 @@
----
-layout: post
-title: "クックパッド第5回 開発コンテスト24に参戦した話"
-date: 2014-10-20
-comments: true
-tags: [cookpad, contest, golang]
-categories: [programming]
----
++++
+categories = ["programming"]
+comments = true
+date = "2014-10-20"
+layout = "post"
+tags = ["cookpad", "contest", "golang"]
+title = "クックパッド第5回 開発コンテスト24に参戦した話"
+
++++
 
 先日も[ISUCONコンテスト予選](http://isucon.net/)に出たばかりですが、土日(10月18-19日)に
 [クックパッドの「第5回 開発コンテスト24」](https://info.cookpad.com/24contest_5)に参戦しました。
