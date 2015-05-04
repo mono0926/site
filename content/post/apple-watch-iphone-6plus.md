@@ -81,7 +81,7 @@ iPhone 6 Plus、大きな画面で毎日かなり愛用しているのですが�
 
 <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=mono0926-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=B00JF9EAHQ" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
-わりと形が見えちゃう程度にはパンパンですが、素材がよく伸びるので、出し入れも楽だし装着負荷も少ないです(　´･‿･｀)
+わりと形が見えちゃう程度にはパンパンですが、素材がよく伸びるので、出し入れも楽だし装着負荷も低いです(　´･‿･｀)
 ちょっと高めですが、とても良い買い物でした。
 
 ![](/images/post/west-case.jpg)
