@@ -1,5 +1,5 @@
 +++
-categories = ["blog"]
+categories = ["ブログ構築"]
 comments = true
 date = "2013-07-07"
 layout = "post"

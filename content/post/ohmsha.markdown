@@ -1,9 +1,9 @@
 +++
-categories = ["book"]
+categories = ["本"]
 comments = true
 date = "2013-12-12"
 layout = "post"
-tags = ["book", "haskell", "programming", "math", "software", "statistics", "excel"]
+tags = ["book", "haskell", "プログラミング", "math", "software", "statistics", "excel"]
 title = "オーム社セールで色々買ってみた"
 
 +++

@@ -1,5 +1,5 @@
 +++
-categories = ["programming"]
+categories = ["プログラミング"]
 comments = true
 date = "2014-06-11"
 layout = "post"

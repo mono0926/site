@@ -1,5 +1,5 @@
 +++
-categories = ["lifehack"]
+categories = ["LINEクリエイターズスタンプ"]
 comments = true
 date = "2014-07-01"
 layout = "post"

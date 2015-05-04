@@ -1,5 +1,5 @@
 +++
-categories = ["stamp"]
+categories = ["LINEクリエイターズスタンプ"]
 comments = true
 date = "2014-04-17"
 layout = "post"
