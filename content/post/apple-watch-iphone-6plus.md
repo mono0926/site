@@ -2,7 +2,7 @@
 categories = ["ガジェット"]
 date = "2015-05-03T22:30:05+09:00"
 tags = ["iphone", "apple-watch", "exercise"]
-title = "Apple Watchを手に入れたのでiPhone 6 Plusへの付き合い方を見直してみる"
+title = "Apple Watchを手に入れたのでiPhone 6 Plusとの付き合い方を見直してみる"
 +++
 
 忌々しき2015/04/10 16時1分、予約戦線で失敗したため、Apple新製品4年ぶり2度目くらいに初日入手ならずな結果に終わってしまったApple Watchですが、昨日ようやく手に入りました。
