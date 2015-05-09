@@ -7,7 +7,7 @@ pygmentsStyle = "monokai"
 theme = "hugo-mono"
 
 [permalinks]
-    post = "blog/:year/:month/:day/:filename/"
+    post = ":section/:filename/"
 
 [params]
     logo = "/images/love.png"
