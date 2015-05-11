@@ -16,7 +16,7 @@ title = "IRKitに外からアクセス出来るようにした"
 まずは、clienttokenを取得。
 
 ```
-Pro:~ mono$ curl -i http://192.168.0.4/keys -d ''
+Pro:~ mono$ curl -i "http://192.168.0.4/keys" -d ''
 HTTP/1.0 200 OK
 Access-Control-Allow-Origin: *
 Server: IRKit/1.3.5.0.gce6ac15
