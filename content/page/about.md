@@ -13,7 +13,7 @@ title = "プロフィール"
 ## 各種リンク
 
 - [Facebook](https://www.facebook.com/mono0926)
-- [Twitter](https://twitter.com/_mono)
+- [Twitter: @_mono](https://twitter.com/_mono)
 - [Qiita](http://qiita.com/mono0926)
   - 2015年6月くらいからたくさん記事書き始めました
 - [GitHub](https://github.com/mono0926)
