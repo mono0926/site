@@ -47,6 +47,11 @@ title = "プロフィール"
 
 [ラヴさんスタンプ](https://store.line.me/stickershop/product/1000854)をLINEクリエイターズスタンプ受付初日に申請して、1,000個くらい売れました。
 
+買っていただけると嬉しいです(　´･‿･｀)  
+ギフト希望の場合はご連絡くださいヽ(・ω・｀）
+
+![2015 App Store Feature](/images/about/onegai.png)
+
 ### [モノサー](https://www.facebook.com/groups/229270203845340/)
 
 テニスサークルぽいの作って、神奈川〜東京でテニスしてます。
