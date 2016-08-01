@@ -12,6 +12,7 @@ title = "プロフィール"
 
 ## 各種リンク
 
+- [Wantedlyプロフィール](https://www.wantedly.com/users/438148)
 - [Facebook](https://www.facebook.com/mono0926)
 - [Twitter: @_mono](https://twitter.com/_mono)
 - [Qiita](http://qiita.com/mono0926)
