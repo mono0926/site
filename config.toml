@@ -10,7 +10,7 @@ theme = "hugo-mono"
     post = ":section/:filename/"
 
 [params]
-    logo = "/images/love.png"
+    logo = "/images/love.png_logo"
     copyright = "Masayuki Ono All right reserved."
     twitter = "https://twitter.com/_mono"
     facebook = "https://www.facebook.com/mono0926"
