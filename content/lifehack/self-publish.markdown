@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-07-14"
-layout = "post"
 title = "電子書籍自費出版系情報まとめ"
 
 +++

@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-06"
-layout = "post"
 tags = ["osx"]
 title = "OSXの開発環境を整えた"
 

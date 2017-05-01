@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-14"
-layout = "post"
 tags = ["angularjs", "jade", "stylus"]
 title = "TypeScript・AngularJS・Jade・Stylusでサンプルコード"
 

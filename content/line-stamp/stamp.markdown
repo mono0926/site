@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-07-01"
-layout = "post"
 tags = ["line", "stamp"]
 title = "ラヴ様LINEスタンプ6月売り上げ"
 

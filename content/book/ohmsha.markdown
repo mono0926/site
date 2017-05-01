@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-12-12"
-layout = "post"
 tags = ["book", "haskell", "プログラミング", "math", "software", "statistics", "excel"]
 title = "オーム社セールで色々買ってみた"
 

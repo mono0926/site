@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-08-04"
-layout = "post"
 tags = ["ginger", "python", "alfred", "english"]
 title = "GingerをAlfredで使えるようにしてみた"
 

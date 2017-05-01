@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-07-07"
-layout = "post"
 tags = ["github", "octopress"]
 title = "GitHub + Octopressでブログ作ってみた"
 

@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-07-19"
-layout = "post"
 tags = ["dropbox", "api"]
 title = "iOSからDropbox Sync APIを使ってみる"
 

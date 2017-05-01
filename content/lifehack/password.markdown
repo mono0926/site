@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-06-13"
-layout = "post"
 tags = ["1password", "ios8"]
 title = "iOS8で1Passwordが使えるようになった"
 

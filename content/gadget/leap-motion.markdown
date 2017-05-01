@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-07-25"
-layout = "post"
 tags = ["leap_motion"]
 title = "Leap Motionが届いた"
 

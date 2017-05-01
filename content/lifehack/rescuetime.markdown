@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-29"
-layout = "post"
 tags = ["rescuetime"]
 title = "RescueTimeを昨日から使い始めた"
 

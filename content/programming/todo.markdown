@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-26"
-layout = "post"
 tags = ["NodeJS", "Express", "Stylus", "Jade", "AngularJS", "Redis"]
 title = "NodeJS + Express + Stylus + Jade + AngularJS + Redisなどなどで、簡単なTODOアプリ"
 

@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-04-17"
-layout = "post"
 title = "ラヴさんスタンプをLINE Creators Marketに申請してみた"
 
 +++

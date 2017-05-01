@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-07-07"
-layout = "post"
 tags = ["octopress", "alfred"]
 title = "Octopressへの投稿やdeployをAlfredのWorkflowで"
 

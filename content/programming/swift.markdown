@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-06-03"
-layout = "post"
 tags = ["swift", "love", "stamp"]
 title = "SwiftでラヴさんWEBアルバムを開くだけのアプリ作った"
 

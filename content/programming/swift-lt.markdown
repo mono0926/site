@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-10-05"
-layout = "post"
 tags = ["ios"]
 title = "iOS 8/Swift エンジニア勉強会資料公開しました"
 

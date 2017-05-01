@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-05"
-layout = "post"
 tags = ["irkit", "nodejs"]
 title = "IRKitで遊び始めた〜とりあえずTerminalで操作〜"
 

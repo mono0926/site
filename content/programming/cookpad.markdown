@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-10-20"
-layout = "post"
 tags = ["cookpad", "contest", "golang"]
 title = "クックパッド第5回 開発コンテスト24に参戦した話"
 

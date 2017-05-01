@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-05-13"
-layout = "post"
 tags = ["golang"]
 title = "golangの環境構築"
 

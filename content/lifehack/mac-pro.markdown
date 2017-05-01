@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-10-27"
-layout = "post"
 title = "Mac Proの新モデル(通称ゴミ箱)を買うことにした"
 
 +++

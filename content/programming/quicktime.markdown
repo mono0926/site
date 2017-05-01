@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-06-11"
-layout = "post"
 title = "iTunesの動画や音楽の再生スピードを変える方法"
 
 +++

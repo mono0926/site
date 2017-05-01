@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-11-23"
-layout = "post"
 tags = ["haskell", "scala", "C#"]
 title = "Haskell勉強中"
 

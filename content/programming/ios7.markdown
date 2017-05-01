@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2013-09-21"
-layout = "post"
 tags = ["iOS7", "iOS", "Xcode", "OSX"]
 title = "iOS7対応記事のまとめ"
 

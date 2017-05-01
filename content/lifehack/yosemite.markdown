@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2014-06-04"
-layout = "post"
 title = "OSX 10.10(Yosemite)やiOS 8にアップデートして困ったこと"
 
 +++
