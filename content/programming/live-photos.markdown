@@ -8,4 +8,4 @@ title = "Live Photosを使ってみる"
 
 イッヌ🐶
 
-<div data-live-photo data-photo-src="/images/post/live-photo.jpg" data-video-src="/images/post/live-photo.mov" style="width: 640px; height: 320px"></div>
+<div data-live-photo data-photo-src="/images/post/live-photo.jpg" data-video-src="/images/post/live-photo.mov" style="height: 640px"></div>
