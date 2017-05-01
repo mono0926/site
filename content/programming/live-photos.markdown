@@ -1,7 +1,6 @@
 +++
 comments = true
 date = "2017-05-01T10:13:29+09:00"
-layout = "post"
 tags = ["live-photos"]
 title = "Live Photosを使ってみる2"
 
