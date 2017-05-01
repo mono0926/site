@@ -1,5 +1,5 @@
 # https://github.com/mono0926/hugo-mono
-baseurl = "http://mono0926.com"
+baseurl = "https://mono0926.com"
 languageCode = "ja"
 title = "mono-log"
 auther = "Masayuki Ono"
