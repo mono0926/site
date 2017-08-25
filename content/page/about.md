@@ -20,7 +20,6 @@ title = "プロフィール"
 ### プロフィール
 
 - [Stack Overflow プロフィール](https://stackoverflow.com/users/story/1524942)
-  - 2015年6月くらいからたくさん記事書き始めました
 - [GitHub](https://github.com/mono0926)
 - [Facebook](https://www.facebook.com/mono0926)
 - [Wantedlyプロフィール](https://www.wantedly.com/users/438148)
