@@ -12,15 +12,18 @@ title = "プロフィール"
 
 ## 各種リンク
 
-- [Wantedlyプロフィール](https://www.wantedly.com/users/438148)
-- [Facebook](https://www.facebook.com/mono0926)
-- [Twitter: @_mono](https://twitter.com/_mono)
+### 技術系記事
+
+- [Medium](https://medium.com/@mono0926)
 - [Qiita](http://qiita.com/mono0926)
+
+### プロフィール
+
+- [Stack Overflow プロフィール](https://stackoverflow.com/users/story/1524942)
   - 2015年6月くらいからたくさん記事書き始めました
 - [GitHub](https://github.com/mono0926)
-  - プライベートレポジトリ含めるとほぼ毎日コミットしてます
-- [Medium](https://medium.com/@mono0926)
-  - 最近使い始めて、Qiitaじゃ微妙なネタを書いてます。(なのでこのブログはほとんど使わず…。)
+- [Facebook](https://www.facebook.com/mono0926)
+- [Wantedlyプロフィール](https://www.wantedly.com/users/438148)
 
 ## 開発したアプリ・サービス
 
