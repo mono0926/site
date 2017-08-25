@@ -19,7 +19,7 @@ title = "🐶 mono "
 
 ### プロフィール
 
-- [Stack Overflow プロフィール](https://stackoverflow.com/users/story/1524942)
+- **[Stack Overflow プロフィール](https://stackoverflow.com/story/mono0926)**
 - [GitHub](https://github.com/mono0926)
 - [Facebook](https://www.facebook.com/mono0926)
 - [Wantedlyプロフィール](https://www.wantedly.com/users/438148)
