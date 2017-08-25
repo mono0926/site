@@ -1,7 +1,7 @@
 # https://github.com/mono0926/hugo-mono
 baseurl = "https://mono0926.com"
 languageCode = "ja"
-title = "mono-log"
+title = "mono0926.com"
 auther = "Masayuki Ono"
 pygmentsStyle = "monokai"
 theme = "hugo-mono"
