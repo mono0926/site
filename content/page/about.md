@@ -26,6 +26,21 @@ title = "🐶 mono "
 
 ## 開発したアプリ・サービス
 
+### [iGhost](https://www.ighost.jp)
+
+- [iGhost - キャラチャット](https://itunes.apple.com/jp/app/apple-store/id959326282?mt=8)
+- [iActor - キャラになろう](https://itunes.apple.com/jp/app/apple-store/id1265017894?mt=8)
+
+日々の直接のユーザーサポート・会社の資金面など以外の、開発に関わることすべてを現在1人で担当しています。
+
+- サーバーサイド(Firebase・GCP)
+- iOSアプリ2本(Swift)
+- デザイン(Sketch)
+- データ分析(BigQuery・Data Studio)
+- 要件定義
+
+2018年2月のリリースから半年で、2アプリ合わせてApp Storeでのレビューは1,000件・平均評価4.65程度の高評価となっています。
+
 ### [JOIN US](http://joinus30.com/)
 
 チーフエンジニアとして、iOS版アプリ + 開発全般やってます。  
