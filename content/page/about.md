@@ -9,6 +9,11 @@ title = "🐶 mono "
 ソフトウェアエンジニアで、今はメインはiOSアプリ開発(Swift)です。Firebaseも得意です。
 `mono`系のIDと犬アイコンで活動してます(　´･‿･｀)
 
+仕事依頼の相談は下記までお願いします:
+
+- [仕事依頼の相談 - mono0926.com](https://mono0926.com/page/job/)
+  - および、そのリンク先: https://gist.github.com/mono0926/5e8d214b09eeec5bb85765d2aec03202
+
 ## 各種リンク
 
 ### 技術系記事
@@ -26,7 +31,11 @@ title = "🐶 mono "
 
 ## 開発したアプリ・サービス
 
+2019年夏頃までのものを掲載しています。
+
 ### [iGhost](https://www.ighost.jp)
+
+※ サービス終了しました(詳細: [[締切済] 2019年8月以降のお仕事を大募集 🐶 — Firebase / Flutter / iOS / Swift / SwiftUI](https://medium.com/@mono0926/job-82ca87f4d75e))
 
 - [iGhost - キャラチャット](https://itunes.apple.com/jp/app/apple-store/id959326282?mt=8)
 - [iActor - キャラになろう](https://itunes.apple.com/jp/app/apple-store/id1265017894?mt=8)
@@ -69,7 +78,3 @@ title = "🐶 mono "
 ギフト希望の場合はご連絡くださいヽ(・ω・｀）
 
 ![2015 App Store Feature](/images/about/onegai.png)
-
-### [モノサー](https://www.facebook.com/groups/229270203845340/)
-
-テニスサークルぽいの作って、神奈川〜東京でテニスしてます。

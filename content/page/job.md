@@ -13,7 +13,7 @@ title = "仕事依頼の相談"
 得意技術は次の通りです(2020年1月更新)。
 
 - Flutterアプリ開発
-  - 2年くらいだが、最近はiOSネイティブより触れる時間が長く最も得意な技術分野になりつつある
+  - キャリア2年くらいだが、長年メインで取り組んでいたiOSネイティブ開発より得意な技術分野になった
   - 執筆記事: [Flutter 🇯🇵 – Medium](https://medium.com/flutter-jp)
 - Firebase全般
   - GCP(Google Cloud Platform)もある程度
