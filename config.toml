@@ -11,6 +11,7 @@ theme = "hugo-mono"
 
 [params]
     logo = "/images/love_logo.png"
+    newSite = "https://mono0926.notion.site/mono-Masayuki-Ono-8959cd3bd40142e19ec433c5cd5b449b"
     copyright = "Masayuki Ono All right reserved."
     twitter = "https://twitter.com/_mono"
     facebook = "https://www.facebook.com/mono0926"
